@@ -1,0 +1,121 @@
+body{
+    display: flex;
+}
+
+.container{
+    background: linear-gradient(135deg, #000000 0%, #0AFCFF 56%, #ff0d0d 100%);
+    width: 1200px;
+    height: 800px;
+    /* background-color:black; */
+    color: aliceblue;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.packman{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    font-size : 50px ;
+    /* border: 1px solid red; */
+}
+.food{
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size : 40px ;
+    /* border: 1px solid red; */
+    background-color: brown;
+    animation-duration: 2s;
+    animation-name: big;
+}
+
+  
+@keyframes big {
+    0% {
+      background: rgba(219, 236, 91, 0.23);
+      left: 2000px;
+    }
+    50% {
+      transform: skewX(-30deg);
+    }
+    100% {
+      background: rgba(250, 6, 6, 0.23);
+    }
+  }
+  
+.score{
+    display: flex;
+    align-items: baseline;
+    box-shadow: 3px 3px 10px 3px #000000;
+    padding: 20px;
+    width: 180px;
+    height: 70px;
+    font-size : 40px ;
+    /* border: 1px solid red; */
+    background-color:rgb(253, 53, 53);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.score-num{
+  padding-left: 20px; 
+  color: chartreuse; 
+}
+.time-div{
+    padding-left: 20px; 
+    color: chartreuse; 
+}
+
+.game-over{
+    background-color:rgb(8, 3, 3);
+    box-shadow: 5px 5px 15px 5px #000000;
+    color: rgb(252, 252, 252);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    display: none;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    /* background-color:rgb(253, 53, 53); */
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.play{
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+background: radial-gradient(ellipse at center, #FF0000 0%, #FFF210 56%, #5300FF 100%);
+}
+.boom {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+  
+@keyframes slidein {
+    from {
+      opacity: 0;
+       
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
